@@ -31,4 +31,5 @@ urlpatterns = [
     #hand coded password paths end
 
     path('register/', views.register, name='register'),
+    path('edit/', views.edit, name='edit'),
 ]
