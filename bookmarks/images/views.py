@@ -3,6 +3,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import ImageCreateForm
 
+
 # Create your views here.
 @login_required
 def image_create(request):
@@ -27,6 +28,6 @@ def image_create(request):
         form = ImageCreateForm(data=request.GET)
 
     return render(request,
-                'images/image/create.html',
-                {'section': 'images',
-                'form': form})
+                  'images/image/create.html',
+                  {'section': 'images',
+                   'form': form})
